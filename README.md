@@ -35,3 +35,9 @@ The comments in the code marked in Russian language :)
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+## NOTICE 3
+Please disable a execution time limit, when you using a biggest iteration count.
+```php
+    @set_time_limit (0);
+```
