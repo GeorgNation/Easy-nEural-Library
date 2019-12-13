@@ -10,6 +10,8 @@ The Easy Neural Library has created for simplify work with Neural Networks.
 
 0.1 (ALPHA 4) - The first mention of solving.
 
+**RELEASE 0.1** - Public Release
+
 ## Requirements
 PHP >5.1
 
