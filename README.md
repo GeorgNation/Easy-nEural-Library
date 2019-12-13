@@ -17,3 +17,6 @@ PHP >5.1
 
 ## Example
 Being added before uploading a public release
+
+## NOTICE
+The comments in the code marked in Russian language :)
