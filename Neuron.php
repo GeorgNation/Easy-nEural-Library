@@ -32,7 +32,6 @@ define ('SEL_FUNCTION_ARCTG', 4); // Нахрен формулы! Арктанг
 define ('SEL_FUNCTION_SIGMOID', 8); // Надоевшая всем сигмоида но рекомендуемая
 define ('SEL_FUNCTION_SQRT_SIGMOID', 16); // Теперь ее превратили в квадрат
 define ('SEL_FUNCTION_LOGISTIC', 32); // Какая-то логистическая сигмоидальная функция. А на нее есть вообще применение?
-define ('SEL_FUNCTION_LOGISTIC_ADVANCED', 64); // Фикс
 
 class NetworkPCT_Simplified
 {
@@ -158,12 +157,8 @@ class NetworkPCT_Simplified
 			break;
 				
 			case 32:
-				$result = logistic ($n);
-			break;	
-				
-			case 64:
 				$result = additional_logistic ($n);
-			break;
+			break;	
 		}
 
 		return $result;
@@ -208,12 +203,7 @@ function sqrt_sigmoid ($n) // Квадратная сигмоида
 	return 1 / sqrt (1 + exp ($n * -1));
 }
 
-function logistic ($n) // Логистическая функция
-{
-	return pow ((1 + exp (-$n)), -1);
-}
-
-function additional_logistic ($n) // Логистическая поправленная функция
+function additional_logistic ($n) // Логистическая функция
 {
 	return 1 / (1 + (1 / pow (M_E, $n)));
 }
