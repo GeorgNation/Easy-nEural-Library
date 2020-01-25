@@ -12,8 +12,13 @@ The Easy Neural Library has created for simplify work with Neural Networks.
 
 **RELEASE 0.1** - Public Release
 
+(Pending) 0.2 Pre-Alpha - Library reconstruction, solving errors.
+
 ## Requirements
 PHP >5.1
+```
+    Versions 0.2 and higher may support only PHP 7!
+```
 
 ## Example
 Find in wiki
